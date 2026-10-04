@@ -1,13 +1,13 @@
 {% set name = "pybase64" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "545ab2a433769e3b8e1ce2b4f7b07218bbde202f4954fbfe52948b2522120727" %}
+{% set version = "1.5.1" %}
+{% set sha256 = "aa924f7c2e90349d472d7d57c3680de8d222a32c2d3d07f922ab2f60516e478d" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
